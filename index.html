@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <title>중1 계획오류 방지 & AI 스캐폴딩 플래너 v7 (완벽 작동판)</title>
+    <title>중1 계획오류 방지 & AI 스캐폴딩 플래너 v9 (12/13~15 시험직전 과목맞춤 완전체) (수학 징검다리 분할 & 월수금 영어 반영)</title>
     <style>
         :root {
             --primary: #1A365D;
@@ -546,8 +546,8 @@
 
     <header>
         <div>
-            <h1>중1 계획오류 방지 & AI 스캐폴딩 플래너 v7 (완벽 작동판)</h1>
-            <p>평일 '1+1 과목' 집중 · 토요일 분량 상한선(△5개/하이탑3개) · 일요일 오후 100% 버퍼 · 1단계→2단계 순서대로 나오는 AI 코칭</p>
+            <h1>중1 계획오류 방지 & AI 스캐폴딩 플래너 v9 (12/13~15 시험직전 과목맞춤 완전체) (수학 징검다리 분할 & 월수금 영어 반영)</h1>
+            <p>수학숙제 5:5 징검다리 분할(월→수, 수→금, 금→토) · 월수금 영어 자발적 숙제(25분 타임어택) · 화목 국/사/과 1과목 집중 · 1→2단계 AI 스캐폴딩</p>
         </div>
         <div class="header-right">
             <div class="stat-pill">
@@ -617,14 +617,14 @@
         <button class="btn btn-outline" style="padding:6px 12px; font-size:0.8rem;" onclick="resetAllData()">전체 초기화</button>
     </div>
     <div class="weekly-grid" id="weekly-bars-container">
-        <div class="week-bar " onclick="openWeekModal(1)">
+<div class="week-bar " onclick="openWeekModal(1)">
         <div class="week-bar-top"><span>📅 11/2(월) ~ 11/8(일)</span><span>터치하여 체크 →</span></div>
-        <div class="week-bar-title">1주차: 학원 신호등(○△×) & 제미나이 △최적풀이 적응</div>
+        <div class="week-bar-title">1주차: 수학 5:5 징검다리 숙제 & 영어 추가숙제 리듬 세팅</div>
         <div class="week-bar-prog" id="wk-prog-1">주간 미션 완료: 0 / 4</div>
     </div>
 <div class="week-bar " onclick="openWeekModal(2)">
         <div class="week-bar-top"><span>📅 11/9(월) ~ 11/15(일)</span><span>터치하여 체크 →</span></div>
-        <div class="week-bar-title">2주차: 자습서 합본 & 하이탑 3문제 상한선 + 노트북LM 첫걸음</div>
+        <div class="week-bar-title">2주차: 제미나이 △코칭(화·목·토) & 하이탑 3문제 상한선</div>
         <div class="week-bar-prog" id="wk-prog-2">주간 미션 완료: 0 / 4</div>
     </div>
 <div class="week-bar w-buffer" onclick="openWeekModal(3)">
@@ -634,7 +634,7 @@
     </div>
 <div class="week-bar " onclick="openWeekModal(4)">
         <div class="week-bar-top"><span>📅 11/23(월) ~ 11/29(일)</span><span>터치하여 체크 →</span></div>
-        <div class="week-bar-title">4주차: 수학 교과서 0.5초 출력 & 제미나이 식 교정</div>
+        <div class="week-bar-title">4주차: 수학 교과서 0.5초 출력 & 평가문제집 1회독 완주</div>
         <div class="week-bar-prog" id="wk-prog-4">주간 미션 완료: 0 / 4</div>
     </div>
 <div class="week-bar " onclick="openWeekModal(5)">
@@ -644,12 +644,12 @@
     </div>
 <div class="week-bar w-final" onclick="openWeekModal(6)">
         <div class="week-bar-top"><span>📅 12/7(월) ~ 12/13(일)</span><span>터치하여 체크 →</span></div>
-        <div class="week-bar-title">6주차: 초시계 3회독 & 7과목 A4 1장 최종 요약</div>
+        <div class="week-bar-title">6주차: 초시계 3회독 완성 & 12/13(일) 첫날 시험과목 올인</div>
         <div class="week-bar-prog" id="wk-prog-6">주간 미션 완료: 0 / 4</div>
     </div>
 <div class="week-bar w-final" onclick="openWeekModal(7)">
         <div class="week-bar-top"><span>📅 12/14(월) ~ 12/20(일)</span><span>터치하여 체크 →</span></div>
-        <div class="week-bar-title">7주차: 실전 정기고사 주간 & 파이널 초고속 스캔</div>
+        <div class="week-bar-title">7주차: ★실전 시험(12/14~16) 익일 과목 맞춤 올인 & 완주</div>
         <div class="week-bar-prog" id="wk-prog-7">주간 미션 완료: 0 / 4</div>
     </div>
 
@@ -658,59 +658,59 @@
     <!-- 2. 7-Week Interactive Calendar (Nov 2 ~ Dec 20, 2026) (PRE-RENDERED + JS ENHANCED) -->
     <div class="section-title">
         <span>📅 2단계: 날짜를 터치해 단원명을 직접 고쳐 쓰고 요일별 체크리스트를 완료하세요!</span>
-        <span style="font-size:0.78rem; color:var(--text-sub);">🔵월수금: 수학만(90분) | 🟢화: 영+국(70분) | 🟢목: 영+사/과(70분) | 🟣토: △5개+하이탑3개 | 🟢일: 오전점검+오후버퍼</span>
+        <span style="font-size:0.78rem; color:var(--text-sub);">🔵월수금: 수학오답+숙제절반(50분)+영어추가숙제(25분) | 🟢화목: 내일수학숙제마무리(40분)+국/사/과(40분) | 🟣토: 월요일수학마무리+△5개+하이탑3개</span>
     </div>
 
     <div class="calendar-container">
         <div class="calendar-grid">
-            <div class="weekday-header">월 (수학 1과목만)</div>
-            <div class="weekday-header">화 (영어+국어만)</div>
-            <div class="weekday-header">수 (수학 1과목만)</div>
-            <div class="weekday-header">목 (영어+사/과만)</div>
-            <div class="weekday-header">금 (수학 1과목만)</div>
+            <div class="weekday-header">월 (수학1차+영숙제)</div>
+            <div class="weekday-header">화 (수숙제끝+국어)</div>
+            <div class="weekday-header">수 (수학1차+영숙제)</div>
+            <div class="weekday-header">목 (금숙제끝+사/과)</div>
+            <div class="weekday-header">금 (수학1차+영숙제)</div>
             <div class="weekday-header" style="color:var(--purple);">토 (스카 상한선)</div>
             <div class="weekday-header" style="color:var(--success);">일 (오후 100% 버퍼)</div>
         </div>
         <div class="calendar-grid" id="calendar-cells-grid">
-            <div class="calendar-cell math-day" onclick="openDayModalIdx(0)" id="cal-cell-0">
+<div class="calendar-cell math-day" onclick="openDayModalIdx(0)" id="cal-cell-0">
         <div>
-            <div class="cell-header"><span class="cell-date">11/2(월)</span><span class="cell-badge">수학+제미나이</span></div>
-            <div class="cell-preview" id="cal-prev-0"><b>수:</b> 학원 ×오답(25분) + 숙제 ○/△/×(50분) + △제미나이 최적풀이(15분)</div>
+            <div class="cell-header"><span class="cell-date">11/2(월)</span><span class="cell-badge">수학1차+영숙제</span></div>
+            <div class="cell-preview" id="cal-prev-0"><b>수:</b> 오늘 ×오답(20분) + 수요일숙제 절반(30분)<br><b>영:</b> ★추가숙제 타임어택(25분)</div>
         </div>
         <div class="cell-footer"><span>1주차</span><span class="prog-zero" id="cal-foot-0">✓ 0/4</span></div>
     </div>
 <div class="calendar-cell eng-day" onclick="openDayModalIdx(1)" id="cal-cell-1">
         <div>
-            <div class="cell-header"><span class="cell-date">11/3(화)</span><span class="cell-badge">영+국(노트북LM)</span></div>
-            <div class="cell-preview" id="cal-prev-1"><b>국:</b> [단원명 입력] 자습서(35분) + 노트북LM 스캐폴딩 퀴즈(15분)</div>
+            <div class="cell-header"><span class="cell-date">11/3(화)</span><span class="cell-badge">수학완수+국어</span></div>
+            <div class="cell-preview" id="cal-prev-1"><b>수:</b> ★내일(수) 학원숙제 마무리+△제미나이(40분)<br><b>국:</b> [단원명 입력] 자습서+NLM(40분)</div>
         </div>
         <div class="cell-footer"><span>1주차</span><span class="prog-zero" id="cal-foot-1">✓ 0/4</span></div>
     </div>
 <div class="calendar-cell math-day" onclick="openDayModalIdx(2)" id="cal-cell-2">
         <div>
-            <div class="cell-header"><span class="cell-date">11/4(수)</span><span class="cell-badge">수학+제미나이</span></div>
-            <div class="cell-preview" id="cal-prev-2"><b>수:</b> 학원 ×오답(25분) + 숙제 ○/△/×(50분) + △제미나이 최적풀이(15분)</div>
+            <div class="cell-header"><span class="cell-date">11/4(수)</span><span class="cell-badge">수학1차+영숙제</span></div>
+            <div class="cell-preview" id="cal-prev-2"><b>수:</b> 오늘 ×오답(20분) + 금요일숙제 절반(30분)<br><b>영:</b> ★추가숙제 타임어택(25분)</div>
         </div>
         <div class="cell-footer"><span>1주차</span><span class="prog-zero" id="cal-foot-2">✓ 0/4</span></div>
     </div>
 <div class="calendar-cell eng-day" onclick="openDayModalIdx(3)" id="cal-cell-3">
         <div>
-            <div class="cell-header"><span class="cell-date">11/5(목)</span><span class="cell-badge">영+사/과(NLM)</span></div>
-            <div class="cell-preview" id="cal-prev-3"><b>과:</b> [단원명 입력] 자습서(35분) + 노트북LM 스캐폴딩 퀴즈(15분)<br><b>사:</b> [번갈아 입력] 단권화</div>
+            <div class="cell-header"><span class="cell-date">11/5(목)</span><span class="cell-badge">수학완수+사/과</span></div>
+            <div class="cell-preview" id="cal-prev-3"><b>수:</b> ★내일(금) 학원숙제 마무리+△제미나이(40분)<br><b>과/사:</b> [단원명 입력] 자습서+NLM(40분)</div>
         </div>
         <div class="cell-footer"><span>1주차</span><span class="prog-zero" id="cal-foot-3">✓ 0/4</span></div>
     </div>
 <div class="calendar-cell math-day" onclick="openDayModalIdx(4)" id="cal-cell-4">
         <div>
-            <div class="cell-header"><span class="cell-date">11/6(금)</span><span class="cell-badge">수학+제미나이</span></div>
-            <div class="cell-preview" id="cal-prev-4"><b>수:</b> 학원 ×오답(25분) + 숙제 ○/△/×(50분) + △제미나이 최적풀이(15분)</div>
+            <div class="cell-header"><span class="cell-date">11/6(금)</span><span class="cell-badge">수학1차+영숙제</span></div>
+            <div class="cell-preview" id="cal-prev-4"><b>수:</b> 오늘 ×오답(20분) + 월요일숙제 절반(30분)<br><b>영:</b> ★추가숙제 타임어택(25분)</div>
         </div>
         <div class="cell-footer"><span>1주차</span><span class="prog-zero" id="cal-foot-4">✓ 0/4</span></div>
     </div>
 <div class="calendar-cell studycafe-day" onclick="openDayModalIdx(5)" id="cal-cell-5">
         <div>
-            <div class="cell-header"><span class="cell-date">11/7(토)</span><span class="cell-badge">스카(△5/하이탑3)</span></div>
-            <div class="cell-preview" id="cal-prev-5"><b>수:</b> 학원 △/× 핵심 5문제만 백지복습<br><b>과:</b> 평가문제집 + ★하이탑 딱 3문제</div>
+            <div class="cell-header"><span class="cell-date">11/7(토)</span><span class="cell-badge">스카(숙제끝+상한선)</span></div>
+            <div class="cell-preview" id="cal-prev-5"><b>수:</b> 월요일숙제 마무리(40분) + 주간△5개(40분)<br><b>과/사:</b> 평가문제집 + ★하이탑 딱 3문제</div>
         </div>
         <div class="cell-footer"><span>1주차</span><span class="prog-zero" id="cal-foot-5">✓ 0/4</span></div>
     </div>
@@ -723,43 +723,43 @@
     </div>
 <div class="calendar-cell math-day" onclick="openDayModalIdx(7)" id="cal-cell-7">
         <div>
-            <div class="cell-header"><span class="cell-date">11/9(월)</span><span class="cell-badge">수학+제미나이</span></div>
-            <div class="cell-preview" id="cal-prev-7"><b>수:</b> 학원 ×오답(25분) + 숙제 ○/△/×(50분) + △제미나이 최적풀이(15분)</div>
+            <div class="cell-header"><span class="cell-date">11/9(월)</span><span class="cell-badge">수학1차+영숙제</span></div>
+            <div class="cell-preview" id="cal-prev-7"><b>수:</b> 오늘 ×오답(20분) + 수요일숙제 절반(30분)<br><b>영:</b> ★추가숙제 타임어택(25분)</div>
         </div>
         <div class="cell-footer"><span>2주차</span><span class="prog-zero" id="cal-foot-7">✓ 0/4</span></div>
     </div>
 <div class="calendar-cell eng-day" onclick="openDayModalIdx(8)" id="cal-cell-8">
         <div>
-            <div class="cell-header"><span class="cell-date">11/10(화)</span><span class="cell-badge">영+국(노트북LM)</span></div>
-            <div class="cell-preview" id="cal-prev-8"><b>국:</b> [단원명 입력] 자습서(35분) + 노트북LM 스캐폴딩 퀴즈(15분)</div>
+            <div class="cell-header"><span class="cell-date">11/10(화)</span><span class="cell-badge">수학완수+국어</span></div>
+            <div class="cell-preview" id="cal-prev-8"><b>수:</b> ★내일(수) 학원숙제 마무리+△제미나이(40분)<br><b>국:</b> [단원명 입력] 자습서+NLM(40분)</div>
         </div>
         <div class="cell-footer"><span>2주차</span><span class="prog-zero" id="cal-foot-8">✓ 0/4</span></div>
     </div>
 <div class="calendar-cell math-day" onclick="openDayModalIdx(9)" id="cal-cell-9">
         <div>
-            <div class="cell-header"><span class="cell-date">11/11(수)</span><span class="cell-badge">수학+제미나이</span></div>
-            <div class="cell-preview" id="cal-prev-9"><b>수:</b> 학원 ×오답(25분) + 숙제 ○/△/×(50분) + △제미나이 최적풀이(15분)</div>
+            <div class="cell-header"><span class="cell-date">11/11(수)</span><span class="cell-badge">수학1차+영숙제</span></div>
+            <div class="cell-preview" id="cal-prev-9"><b>수:</b> 오늘 ×오답(20분) + 금요일숙제 절반(30분)<br><b>영:</b> ★추가숙제 타임어택(25분)</div>
         </div>
         <div class="cell-footer"><span>2주차</span><span class="prog-zero" id="cal-foot-9">✓ 0/4</span></div>
     </div>
 <div class="calendar-cell eng-day" onclick="openDayModalIdx(10)" id="cal-cell-10">
         <div>
-            <div class="cell-header"><span class="cell-date">11/12(목)</span><span class="cell-badge">영+사/과(NLM)</span></div>
-            <div class="cell-preview" id="cal-prev-10"><b>과:</b> [단원명 입력] 자습서(35분) + 노트북LM 스캐폴딩 퀴즈(15분)<br><b>사:</b> [번갈아 입력] 단권화</div>
+            <div class="cell-header"><span class="cell-date">11/12(목)</span><span class="cell-badge">수학완수+사/과</span></div>
+            <div class="cell-preview" id="cal-prev-10"><b>수:</b> ★내일(금) 학원숙제 마무리+△제미나이(40분)<br><b>과/사:</b> [단원명 입력] 자습서+NLM(40분)</div>
         </div>
         <div class="cell-footer"><span>2주차</span><span class="prog-zero" id="cal-foot-10">✓ 0/4</span></div>
     </div>
 <div class="calendar-cell math-day" onclick="openDayModalIdx(11)" id="cal-cell-11">
         <div>
-            <div class="cell-header"><span class="cell-date">11/13(금)</span><span class="cell-badge">수학+제미나이</span></div>
-            <div class="cell-preview" id="cal-prev-11"><b>수:</b> 학원 ×오답(25분) + 숙제 ○/△/×(50분) + △제미나이 최적풀이(15분)</div>
+            <div class="cell-header"><span class="cell-date">11/13(금)</span><span class="cell-badge">수학1차+영숙제</span></div>
+            <div class="cell-preview" id="cal-prev-11"><b>수:</b> 오늘 ×오답(20분) + 월요일숙제 절반(30분)<br><b>영:</b> ★추가숙제 타임어택(25분)</div>
         </div>
         <div class="cell-footer"><span>2주차</span><span class="prog-zero" id="cal-foot-11">✓ 0/4</span></div>
     </div>
 <div class="calendar-cell studycafe-day" onclick="openDayModalIdx(12)" id="cal-cell-12">
         <div>
-            <div class="cell-header"><span class="cell-date">11/14(토)</span><span class="cell-badge">스카(△5/하이탑3)</span></div>
-            <div class="cell-preview" id="cal-prev-12"><b>수:</b> 학원 △/× 핵심 5문제만 백지복습<br><b>과:</b> 평가문제집 + ★하이탑 딱 3문제</div>
+            <div class="cell-header"><span class="cell-date">11/14(토)</span><span class="cell-badge">스카(숙제끝+상한선)</span></div>
+            <div class="cell-preview" id="cal-prev-12"><b>수:</b> 월요일숙제 마무리(40분) + 주간△5개(40분)<br><b>과/사:</b> 평가문제집 + ★하이탑 딱 3문제</div>
         </div>
         <div class="cell-footer"><span>2주차</span><span class="prog-zero" id="cal-foot-12">✓ 0/4</span></div>
     </div>
@@ -772,43 +772,43 @@
     </div>
 <div class="calendar-cell math-day" onclick="openDayModalIdx(14)" id="cal-cell-14">
         <div>
-            <div class="cell-header"><span class="cell-date">11/16(월)</span><span class="cell-badge">수학+제미나이</span></div>
-            <div class="cell-preview" id="cal-prev-14"><b>수:</b> 학원 ×오답(25분) + 숙제 ○/△/×(50분) + △제미나이 최적풀이(15분)</div>
+            <div class="cell-header"><span class="cell-date">11/16(월)</span><span class="cell-badge">수학1차+영숙제</span></div>
+            <div class="cell-preview" id="cal-prev-14"><b>수:</b> 오늘 ×오답(20분) + 수요일숙제 절반(30분)<br><b>영:</b> ★추가숙제 타임어택(25분)</div>
         </div>
         <div class="cell-footer"><span>3주차</span><span class="prog-zero" id="cal-foot-14">✓ 0/4</span></div>
     </div>
 <div class="calendar-cell eng-day" onclick="openDayModalIdx(15)" id="cal-cell-15">
         <div>
-            <div class="cell-header"><span class="cell-date">11/17(화)</span><span class="cell-badge">영+국(노트북LM)</span></div>
-            <div class="cell-preview" id="cal-prev-15"><b>국:</b> [단원명 입력] 자습서(35분) + 노트북LM 스캐폴딩 퀴즈(15분)</div>
+            <div class="cell-header"><span class="cell-date">11/17(화)</span><span class="cell-badge">수학완수+국어</span></div>
+            <div class="cell-preview" id="cal-prev-15"><b>수:</b> ★내일(수) 학원숙제 마무리+△제미나이(40분)<br><b>국:</b> [단원명 입력] 자습서+NLM(40분)</div>
         </div>
         <div class="cell-footer"><span>3주차</span><span class="prog-zero" id="cal-foot-15">✓ 0/4</span></div>
     </div>
 <div class="calendar-cell math-day" onclick="openDayModalIdx(16)" id="cal-cell-16">
         <div>
-            <div class="cell-header"><span class="cell-date">11/18(수)</span><span class="cell-badge">수학+제미나이</span></div>
-            <div class="cell-preview" id="cal-prev-16"><b>수:</b> 학원 ×오답(25분) + 숙제 ○/△/×(50분) + △제미나이 최적풀이(15분)</div>
+            <div class="cell-header"><span class="cell-date">11/18(수)</span><span class="cell-badge">수학1차+영숙제</span></div>
+            <div class="cell-preview" id="cal-prev-16"><b>수:</b> 오늘 ×오답(20분) + 금요일숙제 절반(30분)<br><b>영:</b> ★추가숙제 타임어택(25분)</div>
         </div>
         <div class="cell-footer"><span>3주차</span><span class="prog-zero" id="cal-foot-16">✓ 0/4</span></div>
     </div>
 <div class="calendar-cell eng-day" onclick="openDayModalIdx(17)" id="cal-cell-17">
         <div>
-            <div class="cell-header"><span class="cell-date">11/19(목)</span><span class="cell-badge">영+사/과(NLM)</span></div>
-            <div class="cell-preview" id="cal-prev-17"><b>과:</b> [단원명 입력] 자습서(35분) + 노트북LM 스캐폴딩 퀴즈(15분)<br><b>사:</b> [번갈아 입력] 단권화</div>
+            <div class="cell-header"><span class="cell-date">11/19(목)</span><span class="cell-badge">수학완수+사/과</span></div>
+            <div class="cell-preview" id="cal-prev-17"><b>수:</b> ★내일(금) 학원숙제 마무리+△제미나이(40분)<br><b>과/사:</b> [단원명 입력] 자습서+NLM(40분)</div>
         </div>
         <div class="cell-footer"><span>3주차</span><span class="prog-zero" id="cal-foot-17">✓ 0/4</span></div>
     </div>
 <div class="calendar-cell math-day" onclick="openDayModalIdx(18)" id="cal-cell-18">
         <div>
-            <div class="cell-header"><span class="cell-date">11/20(금)</span><span class="cell-badge">수학+제미나이</span></div>
-            <div class="cell-preview" id="cal-prev-18"><b>수:</b> 학원 ×오답(25분) + 숙제 ○/△/×(50분) + △제미나이 최적풀이(15분)</div>
+            <div class="cell-header"><span class="cell-date">11/20(금)</span><span class="cell-badge">수학1차+영숙제</span></div>
+            <div class="cell-preview" id="cal-prev-18"><b>수:</b> 오늘 ×오답(20분) + 월요일숙제 절반(30분)<br><b>영:</b> ★추가숙제 타임어택(25분)</div>
         </div>
         <div class="cell-footer"><span>3주차</span><span class="prog-zero" id="cal-foot-18">✓ 0/4</span></div>
     </div>
 <div class="calendar-cell studycafe-day" onclick="openDayModalIdx(19)" id="cal-cell-19">
         <div>
-            <div class="cell-header"><span class="cell-date">11/21(토)</span><span class="cell-badge">스카(△5/하이탑3)</span></div>
-            <div class="cell-preview" id="cal-prev-19"><b>수:</b> 학원 △/× 핵심 5문제만 백지복습<br><b>과:</b> 평가문제집 + ★하이탑 딱 3문제</div>
+            <div class="cell-header"><span class="cell-date">11/21(토)</span><span class="cell-badge">스카(숙제끝+상한선)</span></div>
+            <div class="cell-preview" id="cal-prev-19"><b>수:</b> 월요일숙제 마무리(40분) + 주간△5개(40분)<br><b>과/사:</b> 평가문제집 + ★하이탑 딱 3문제</div>
         </div>
         <div class="cell-footer"><span>3주차</span><span class="prog-zero" id="cal-foot-19">✓ 0/4</span></div>
     </div>
@@ -821,43 +821,43 @@
     </div>
 <div class="calendar-cell math-day" onclick="openDayModalIdx(21)" id="cal-cell-21">
         <div>
-            <div class="cell-header"><span class="cell-date">11/23(월)</span><span class="cell-badge">수학+제미나이</span></div>
-            <div class="cell-preview" id="cal-prev-21"><b>수:</b> 학원 ×오답(25분) + 숙제 ○/△/×(50분) + △제미나이 최적풀이(15분)</div>
+            <div class="cell-header"><span class="cell-date">11/23(월)</span><span class="cell-badge">수학1차+영숙제</span></div>
+            <div class="cell-preview" id="cal-prev-21"><b>수:</b> 오늘 ×오답(20분) + 수요일숙제 절반(30분)<br><b>영:</b> ★추가숙제 타임어택(25분)</div>
         </div>
         <div class="cell-footer"><span>4주차</span><span class="prog-zero" id="cal-foot-21">✓ 0/4</span></div>
     </div>
 <div class="calendar-cell eng-day" onclick="openDayModalIdx(22)" id="cal-cell-22">
         <div>
-            <div class="cell-header"><span class="cell-date">11/24(화)</span><span class="cell-badge">영+국(노트북LM)</span></div>
-            <div class="cell-preview" id="cal-prev-22"><b>국:</b> [단원명 입력] 자습서(35분) + 노트북LM 스캐폴딩 퀴즈(15분)</div>
+            <div class="cell-header"><span class="cell-date">11/24(화)</span><span class="cell-badge">수학완수+국어</span></div>
+            <div class="cell-preview" id="cal-prev-22"><b>수:</b> ★내일(수) 학원숙제 마무리+△제미나이(40분)<br><b>국:</b> [단원명 입력] 자습서+NLM(40분)</div>
         </div>
         <div class="cell-footer"><span>4주차</span><span class="prog-zero" id="cal-foot-22">✓ 0/4</span></div>
     </div>
 <div class="calendar-cell math-day" onclick="openDayModalIdx(23)" id="cal-cell-23">
         <div>
-            <div class="cell-header"><span class="cell-date">11/25(수)</span><span class="cell-badge">수학+제미나이</span></div>
-            <div class="cell-preview" id="cal-prev-23"><b>수:</b> 학원 ×오답(25분) + 숙제 ○/△/×(50분) + △제미나이 최적풀이(15분)</div>
+            <div class="cell-header"><span class="cell-date">11/25(수)</span><span class="cell-badge">수학1차+영숙제</span></div>
+            <div class="cell-preview" id="cal-prev-23"><b>수:</b> 오늘 ×오답(20분) + 금요일숙제 절반(30분)<br><b>영:</b> ★추가숙제 타임어택(25분)</div>
         </div>
         <div class="cell-footer"><span>4주차</span><span class="prog-zero" id="cal-foot-23">✓ 0/4</span></div>
     </div>
 <div class="calendar-cell eng-day" onclick="openDayModalIdx(24)" id="cal-cell-24">
         <div>
-            <div class="cell-header"><span class="cell-date">11/26(목)</span><span class="cell-badge">영+사/과(NLM)</span></div>
-            <div class="cell-preview" id="cal-prev-24"><b>과:</b> [단원명 입력] 자습서(35분) + 노트북LM 스캐폴딩 퀴즈(15분)<br><b>사:</b> [번갈아 입력] 단권화</div>
+            <div class="cell-header"><span class="cell-date">11/26(목)</span><span class="cell-badge">수학완수+사/과</span></div>
+            <div class="cell-preview" id="cal-prev-24"><b>수:</b> ★내일(금) 학원숙제 마무리+△제미나이(40분)<br><b>과/사:</b> [단원명 입력] 자습서+NLM(40분)</div>
         </div>
         <div class="cell-footer"><span>4주차</span><span class="prog-zero" id="cal-foot-24">✓ 0/4</span></div>
     </div>
 <div class="calendar-cell math-day" onclick="openDayModalIdx(25)" id="cal-cell-25">
         <div>
-            <div class="cell-header"><span class="cell-date">11/27(금)</span><span class="cell-badge">수학+제미나이</span></div>
-            <div class="cell-preview" id="cal-prev-25"><b>수:</b> 학원 ×오답(25분) + 숙제 ○/△/×(50분) + △제미나이 최적풀이(15분)</div>
+            <div class="cell-header"><span class="cell-date">11/27(금)</span><span class="cell-badge">수학1차+영숙제</span></div>
+            <div class="cell-preview" id="cal-prev-25"><b>수:</b> 오늘 ×오답(20분) + 월요일숙제 절반(30분)<br><b>영:</b> ★추가숙제 타임어택(25분)</div>
         </div>
         <div class="cell-footer"><span>4주차</span><span class="prog-zero" id="cal-foot-25">✓ 0/4</span></div>
     </div>
 <div class="calendar-cell studycafe-day" onclick="openDayModalIdx(26)" id="cal-cell-26">
         <div>
-            <div class="cell-header"><span class="cell-date">11/28(토)</span><span class="cell-badge">스카(△5/하이탑3)</span></div>
-            <div class="cell-preview" id="cal-prev-26"><b>수:</b> 학원 △/× 핵심 5문제만 백지복습<br><b>과:</b> 평가문제집 + ★하이탑 딱 3문제</div>
+            <div class="cell-header"><span class="cell-date">11/28(토)</span><span class="cell-badge">스카(숙제끝+상한선)</span></div>
+            <div class="cell-preview" id="cal-prev-26"><b>수:</b> 월요일숙제 마무리(40분) + 주간△5개(40분)<br><b>과/사:</b> 평가문제집 + ★하이탑 딱 3문제</div>
         </div>
         <div class="cell-footer"><span>4주차</span><span class="prog-zero" id="cal-foot-26">✓ 0/4</span></div>
     </div>
@@ -870,43 +870,43 @@
     </div>
 <div class="calendar-cell math-day" onclick="openDayModalIdx(28)" id="cal-cell-28">
         <div>
-            <div class="cell-header"><span class="cell-date">11/30(월)</span><span class="cell-badge">수학+제미나이</span></div>
-            <div class="cell-preview" id="cal-prev-28"><b>수:</b> 학원 ×오답(25분) + 숙제 ○/△/×(50분) + △제미나이 최적풀이(15분)</div>
+            <div class="cell-header"><span class="cell-date">11/30(월)</span><span class="cell-badge">수학1차+영숙제</span></div>
+            <div class="cell-preview" id="cal-prev-28"><b>수:</b> 오늘 ×오답(20분) + 수요일숙제 절반(30분)<br><b>영:</b> ★추가숙제 타임어택(25분)</div>
         </div>
         <div class="cell-footer"><span>5주차</span><span class="prog-zero" id="cal-foot-28">✓ 0/4</span></div>
     </div>
 <div class="calendar-cell eng-day" onclick="openDayModalIdx(29)" id="cal-cell-29">
         <div>
-            <div class="cell-header"><span class="cell-date">12/1(화)</span><span class="cell-badge">영+국(노트북LM)</span></div>
-            <div class="cell-preview" id="cal-prev-29"><b>국:</b> [단원명 입력] 자습서(35분) + 노트북LM 스캐폴딩 퀴즈(15분)</div>
+            <div class="cell-header"><span class="cell-date">12/1(화)</span><span class="cell-badge">수학완수+국어</span></div>
+            <div class="cell-preview" id="cal-prev-29"><b>수:</b> ★내일(수) 학원숙제 마무리+△제미나이(40분)<br><b>국:</b> [단원명 입력] 자습서+NLM(40분)</div>
         </div>
         <div class="cell-footer"><span>5주차</span><span class="prog-zero" id="cal-foot-29">✓ 0/4</span></div>
     </div>
 <div class="calendar-cell math-day" onclick="openDayModalIdx(30)" id="cal-cell-30">
         <div>
-            <div class="cell-header"><span class="cell-date">12/2(수)</span><span class="cell-badge">수학+제미나이</span></div>
-            <div class="cell-preview" id="cal-prev-30"><b>수:</b> 학원 ×오답(25분) + 숙제 ○/△/×(50분) + △제미나이 최적풀이(15분)</div>
+            <div class="cell-header"><span class="cell-date">12/2(수)</span><span class="cell-badge">수학1차+영숙제</span></div>
+            <div class="cell-preview" id="cal-prev-30"><b>수:</b> 오늘 ×오답(20분) + 금요일숙제 절반(30분)<br><b>영:</b> ★추가숙제 타임어택(25분)</div>
         </div>
         <div class="cell-footer"><span>5주차</span><span class="prog-zero" id="cal-foot-30">✓ 0/4</span></div>
     </div>
 <div class="calendar-cell eng-day" onclick="openDayModalIdx(31)" id="cal-cell-31">
         <div>
-            <div class="cell-header"><span class="cell-date">12/3(목)</span><span class="cell-badge">영+사/과(NLM)</span></div>
-            <div class="cell-preview" id="cal-prev-31"><b>과:</b> [단원명 입력] 자습서(35분) + 노트북LM 스캐폴딩 퀴즈(15분)<br><b>사:</b> [번갈아 입력] 단권화</div>
+            <div class="cell-header"><span class="cell-date">12/3(목)</span><span class="cell-badge">수학완수+사/과</span></div>
+            <div class="cell-preview" id="cal-prev-31"><b>수:</b> ★내일(금) 학원숙제 마무리+△제미나이(40분)<br><b>과/사:</b> [단원명 입력] 자습서+NLM(40분)</div>
         </div>
         <div class="cell-footer"><span>5주차</span><span class="prog-zero" id="cal-foot-31">✓ 0/4</span></div>
     </div>
 <div class="calendar-cell math-day" onclick="openDayModalIdx(32)" id="cal-cell-32">
         <div>
-            <div class="cell-header"><span class="cell-date">12/4(금)</span><span class="cell-badge">수학+제미나이</span></div>
-            <div class="cell-preview" id="cal-prev-32"><b>수:</b> 학원 ×오답(25분) + 숙제 ○/△/×(50분) + △제미나이 최적풀이(15분)</div>
+            <div class="cell-header"><span class="cell-date">12/4(금)</span><span class="cell-badge">수학1차+영숙제</span></div>
+            <div class="cell-preview" id="cal-prev-32"><b>수:</b> 오늘 ×오답(20분) + 월요일숙제 절반(30분)<br><b>영:</b> ★추가숙제 타임어택(25분)</div>
         </div>
         <div class="cell-footer"><span>5주차</span><span class="prog-zero" id="cal-foot-32">✓ 0/4</span></div>
     </div>
 <div class="calendar-cell studycafe-day" onclick="openDayModalIdx(33)" id="cal-cell-33">
         <div>
-            <div class="cell-header"><span class="cell-date">12/5(토)</span><span class="cell-badge">스카(△5/하이탑3)</span></div>
-            <div class="cell-preview" id="cal-prev-33"><b>수:</b> 학원 △/× 핵심 5문제만 백지복습<br><b>과:</b> 평가문제집 + ★하이탑 딱 3문제</div>
+            <div class="cell-header"><span class="cell-date">12/5(토)</span><span class="cell-badge">스카(숙제끝+상한선)</span></div>
+            <div class="cell-preview" id="cal-prev-33"><b>수:</b> 월요일숙제 마무리(40분) + 주간△5개(40분)<br><b>과/사:</b> 평가문제집 + ★하이탑 딱 3문제</div>
         </div>
         <div class="cell-footer"><span>5주차</span><span class="prog-zero" id="cal-foot-33">✓ 0/4</span></div>
     </div>
@@ -919,103 +919,102 @@
     </div>
 <div class="calendar-cell math-day" onclick="openDayModalIdx(35)" id="cal-cell-35">
         <div>
-            <div class="cell-header"><span class="cell-date">12/7(월)</span><span class="cell-badge">수학+제미나이</span></div>
-            <div class="cell-preview" id="cal-prev-35"><b>수:</b> 학원 ×오답(25분) + 숙제 ○/△/×(50분) + △제미나이 최적풀이(15분)</div>
+            <div class="cell-header"><span class="cell-date">12/7(월)</span><span class="cell-badge">수학1차+영숙제</span></div>
+            <div class="cell-preview" id="cal-prev-35"><b>수:</b> 오늘 ×오답(20분) + 수요일숙제 절반(30분)<br><b>영:</b> ★추가숙제 타임어택(25분)</div>
         </div>
         <div class="cell-footer"><span>6주차</span><span class="prog-zero" id="cal-foot-35">✓ 0/4</span></div>
     </div>
 <div class="calendar-cell eng-day" onclick="openDayModalIdx(36)" id="cal-cell-36">
         <div>
-            <div class="cell-header"><span class="cell-date">12/8(화)</span><span class="cell-badge">영+국(노트북LM)</span></div>
-            <div class="cell-preview" id="cal-prev-36"><b>국:</b> [단원명 입력] 자습서(35분) + 노트북LM 스캐폴딩 퀴즈(15분)</div>
+            <div class="cell-header"><span class="cell-date">12/8(화)</span><span class="cell-badge">수학완수+국어</span></div>
+            <div class="cell-preview" id="cal-prev-36"><b>수:</b> ★내일(수) 학원숙제 마무리+△제미나이(40분)<br><b>국:</b> [단원명 입력] 자습서+NLM(40분)</div>
         </div>
         <div class="cell-footer"><span>6주차</span><span class="prog-zero" id="cal-foot-36">✓ 0/4</span></div>
     </div>
 <div class="calendar-cell math-day" onclick="openDayModalIdx(37)" id="cal-cell-37">
         <div>
-            <div class="cell-header"><span class="cell-date">12/9(수)</span><span class="cell-badge">수학+제미나이</span></div>
-            <div class="cell-preview" id="cal-prev-37"><b>수:</b> 학원 ×오답(25분) + 숙제 ○/△/×(50분) + △제미나이 최적풀이(15분)</div>
+            <div class="cell-header"><span class="cell-date">12/9(수)</span><span class="cell-badge">수학1차+영숙제</span></div>
+            <div class="cell-preview" id="cal-prev-37"><b>수:</b> 오늘 ×오답(20분) + 금요일숙제 절반(30분)<br><b>영:</b> ★추가숙제 타임어택(25분)</div>
         </div>
         <div class="cell-footer"><span>6주차</span><span class="prog-zero" id="cal-foot-37">✓ 0/4</span></div>
     </div>
 <div class="calendar-cell eng-day" onclick="openDayModalIdx(38)" id="cal-cell-38">
         <div>
-            <div class="cell-header"><span class="cell-date">12/10(목)</span><span class="cell-badge">영+사/과(NLM)</span></div>
-            <div class="cell-preview" id="cal-prev-38"><b>과:</b> [단원명 입력] 자습서(35분) + 노트북LM 스캐폴딩 퀴즈(15분)<br><b>사:</b> [번갈아 입력] 단권화</div>
+            <div class="cell-header"><span class="cell-date">12/10(목)</span><span class="cell-badge">수학완수+사/과</span></div>
+            <div class="cell-preview" id="cal-prev-38"><b>수:</b> ★내일(금) 학원숙제 마무리+△제미나이(40분)<br><b>과/사:</b> [단원명 입력] 자습서+NLM(40분)</div>
         </div>
         <div class="cell-footer"><span>6주차</span><span class="prog-zero" id="cal-foot-38">✓ 0/4</span></div>
     </div>
 <div class="calendar-cell math-day" onclick="openDayModalIdx(39)" id="cal-cell-39">
         <div>
-            <div class="cell-header"><span class="cell-date">12/11(금)</span><span class="cell-badge">수학+제미나이</span></div>
-            <div class="cell-preview" id="cal-prev-39"><b>수:</b> 학원 ×오답(25분) + 숙제 ○/△/×(50분) + △제미나이 최적풀이(15분)</div>
+            <div class="cell-header"><span class="cell-date">12/11(금)</span><span class="cell-badge">수학1차+영숙제</span></div>
+            <div class="cell-preview" id="cal-prev-39"><b>수:</b> 오늘 ×오답(20분) + 월요일숙제 절반(30분)<br><b>영:</b> ★추가숙제 타임어택(25분)</div>
         </div>
         <div class="cell-footer"><span>6주차</span><span class="prog-zero" id="cal-foot-39">✓ 0/4</span></div>
     </div>
 <div class="calendar-cell studycafe-day" onclick="openDayModalIdx(40)" id="cal-cell-40">
         <div>
-            <div class="cell-header"><span class="cell-date">12/12(토)</span><span class="cell-badge">스카(△5/하이탑3)</span></div>
-            <div class="cell-preview" id="cal-prev-40"><b>수:</b> 학원 △/× 핵심 5문제만 백지복습<br><b>과:</b> 평가문제집 + ★하이탑 딱 3문제</div>
+            <div class="cell-header"><span class="cell-date">12/12(토)</span><span class="cell-badge">스카(숙제끝+상한선)</span></div>
+            <div class="cell-preview" id="cal-prev-40"><b>수:</b> 월요일숙제 마무리(40분) + 주간△5개(40분)<br><b>과/사:</b> 평가문제집 + ★하이탑 딱 3문제</div>
         </div>
         <div class="cell-footer"><span>6주차</span><span class="prog-zero" id="cal-foot-40">✓ 0/4</span></div>
     </div>
-<div class="calendar-cell buffer-day" onclick="openDayModalIdx(41)" id="cal-cell-41">
+<div class="calendar-cell exam-day" onclick="openDayModalIdx(41)" id="cal-cell-41">
         <div>
-            <div class="cell-header"><span class="cell-date">12/13(일)</span><span class="cell-badge">오후 100%버퍼</span></div>
-            <div class="cell-preview" id="cal-prev-41"><b>수:</b> [오전] 교과서 0.5초 출력(35분)<br><b>도/한:</b> [오전] 40분 점검<br><b>오후:</b> 정규계획 0! 보충/휴식</div>
+            <div class="cell-header"><span class="cell-date">12/13(일)</span><span class="cell-badge" style="background:#FED7D7; color:#C53030;">★D-1 첫날시험대비</span></div>
+            <div class="cell-preview" id="cal-prev-41"><b>[내일 12/14 시험과목 올인]</b><br>• 1일차 시험과목 입력 후 자습서·오답·A4요약본 총정리!</div>
         </div>
-        <div class="cell-footer"><span>6주차</span><span class="prog-zero" id="cal-foot-41">✓ 0/4</span></div>
+        <div class="cell-footer"><span>6주차(D-1)</span><span class="prog-zero" id="cal-foot-41">✓ 0/4</span></div>
     </div>
 <div class="calendar-cell exam-day" onclick="openDayModalIdx(42)" id="cal-cell-42">
         <div>
-            <div class="cell-header"><span class="cell-date">12/14(월)</span><span class="cell-badge">실전/파이널</span></div>
-            <div class="cell-preview" id="cal-prev-42"><b>수:</b> 제미나이 행동강령 스캔<br><b>국:</b> 내일 시험과목 자습서 & A4 요약본</div>
+            <div class="cell-header"><span class="cell-date">12/14(월)</span><span class="cell-badge" style="background:#FED7D7; color:#C53030;">★시험1일차/2일차대비</span></div>
+            <div class="cell-preview" id="cal-prev-42"><b>[오전] 1일차 시험</b><br><b>[오후] 내일(12/15) 시험과목 올인!</b> 자습서·행동강령·A4요약</div>
         </div>
-        <div class="cell-footer"><span>7주차</span><span class="prog-zero" id="cal-foot-42">✓ 0/3</span></div>
+        <div class="cell-footer"><span>7주차(본시험)</span><span class="prog-zero" id="cal-foot-42">✓ 0/4</span></div>
     </div>
 <div class="calendar-cell exam-day" onclick="openDayModalIdx(43)" id="cal-cell-43">
         <div>
-            <div class="cell-header"><span class="cell-date">12/15(화)</span><span class="cell-badge">실전/파이널</span></div>
-            <div class="cell-preview" id="cal-prev-43"><b>수:</b> 제미나이 행동강령 스캔<br><b>국:</b> 내일 시험과목 자습서 & A4 요약본</div>
+            <div class="cell-header"><span class="cell-date">12/15(화)</span><span class="cell-badge" style="background:#FED7D7; color:#C53030;">★시험2일차/3일차대비</span></div>
+            <div class="cell-preview" id="cal-prev-43"><b>[오전] 2일차 시험</b><br><b>[오후] 내일(12/16) 시험과목 올인!</b> 마지막 날 과목 총정리</div>
         </div>
-        <div class="cell-footer"><span>7주차</span><span class="prog-zero" id="cal-foot-43">✓ 0/3</span></div>
+        <div class="cell-footer"><span>7주차(본시험)</span><span class="prog-zero" id="cal-foot-43">✓ 0/4</span></div>
     </div>
-<div class="calendar-cell exam-day" onclick="openDayModalIdx(44)" id="cal-cell-44">
+<div class="calendar-cell buffer-day" onclick="openDayModalIdx(44)" id="cal-cell-44">
         <div>
-            <div class="cell-header"><span class="cell-date">12/16(수)</span><span class="cell-badge">실전/파이널</span></div>
-            <div class="cell-preview" id="cal-prev-44"><b>수:</b> 제미나이 행동강령 스캔<br><b>국:</b> 내일 시험과목 자습서 & A4 요약본</div>
+            <div class="cell-header"><span class="cell-date">12/16(수)</span><span class="cell-badge" style="background:#C6F6D5; color:#22543D;">🎉시험종료/해방!</span></div>
+            <div class="cell-preview" id="cal-prev-44"><b>[오전] 3일차 마지막 시험 완주!</b><br><b>[오후]</b> 시험 끝! 7주 완주 셀프 칭찬 & 푹 쉬기!</div>
         </div>
-        <div class="cell-footer"><span>7주차</span><span class="prog-zero" id="cal-foot-44">✓ 0/3</span></div>
+        <div class="cell-footer"><span>7주차(종료)</span><span class="prog-zero" id="cal-foot-44">✓ 0/3</span></div>
     </div>
-<div class="calendar-cell exam-day" onclick="openDayModalIdx(45)" id="cal-cell-45">
+<div class="calendar-cell buffer-day" onclick="openDayModalIdx(45)" id="cal-cell-45">
         <div>
-            <div class="cell-header"><span class="cell-date">12/17(목)</span><span class="cell-badge">실전/파이널</span></div>
-            <div class="cell-preview" id="cal-prev-45"><b>수:</b> 제미나이 행동강령 스캔<br><b>국:</b> 내일 시험과목 자습서 & A4 요약본</div>
+            <div class="cell-header"><span class="cell-date">12/17(목)</span><span class="cell-badge">시험후 휴식/복기</span></div>
+            <div class="cell-preview" id="cal-prev-45">• 학교 시험지 이의신청 확인<br>• 푹 쉬며 에너지 충전</div>
         </div>
-        <div class="cell-footer"><span>7주차</span><span class="prog-zero" id="cal-foot-45">✓ 0/3</span></div>
+        <div class="cell-footer"><span>7주차</span><span class="prog-zero" id="cal-foot-45">✓ 0/2</span></div>
     </div>
-<div class="calendar-cell exam-day" onclick="openDayModalIdx(46)" id="cal-cell-46">
+<div class="calendar-cell buffer-day" onclick="openDayModalIdx(46)" id="cal-cell-46">
         <div>
-            <div class="cell-header"><span class="cell-date">12/18(금)</span><span class="cell-badge">실전/파이널</span></div>
-            <div class="cell-preview" id="cal-prev-46"><b>수:</b> 제미나이 행동강령 스캔<br><b>국:</b> 내일 시험과목 자습서 & A4 요약본</div>
+            <div class="cell-header"><span class="cell-date">12/18(금)</span><span class="cell-badge">시험후 휴식/복기</span></div>
+            <div class="cell-preview" id="cal-prev-46">• 학교 시험지 오답 가볍게 확인<br>• 학원 일상 루틴 복귀</div>
         </div>
-        <div class="cell-footer"><span>7주차</span><span class="prog-zero" id="cal-foot-46">✓ 0/3</span></div>
+        <div class="cell-footer"><span>7주차</span><span class="prog-zero" id="cal-foot-46">✓ 0/2</span></div>
     </div>
-<div class="calendar-cell exam-day" onclick="openDayModalIdx(47)" id="cal-cell-47">
+<div class="calendar-cell buffer-day" onclick="openDayModalIdx(47)" id="cal-cell-47">
         <div>
-            <div class="cell-header"><span class="cell-date">12/19(토)</span><span class="cell-badge">실전/파이널</span></div>
-            <div class="cell-preview" id="cal-prev-47"><b>수:</b> 제미나이 행동강령 스캔<br><b>국:</b> 내일 시험과목 자습서 & A4 요약본</div>
+            <div class="cell-header"><span class="cell-date">12/19(토)</span><span class="cell-badge">주말 자유휴식</span></div>
+            <div class="cell-preview" id="cal-prev-47">• 7주간의 대장정 완주 보상 데이!<br>• 가족과 맛있는 식사 & 휴식</div>
         </div>
-        <div class="cell-footer"><span>7주차</span><span class="prog-zero" id="cal-foot-47">✓ 0/3</span></div>
+        <div class="cell-footer"><span>7주차</span><span class="prog-zero" id="cal-foot-47">✓ 0/2</span></div>
     </div>
-<div class="calendar-cell exam-day" onclick="openDayModalIdx(48)" id="cal-cell-48">
+<div class="calendar-cell buffer-day" onclick="openDayModalIdx(48)" id="cal-cell-48">
         <div>
-            <div class="cell-header"><span class="cell-date">12/20(일)</span><span class="cell-badge">실전/파이널</span></div>
-            <div class="cell-preview" id="cal-prev-48"><b>수:</b> 제미나이 행동강령 스캔<br><b>국:</b> 내일 시험과목 자습서 & A4 요약본</div>
+            <div class="cell-header"><span class="cell-date">12/20(일)</span><span class="cell-badge">7주 대장정 마무리</span></div>
+            <div class="cell-preview" id="cal-prev-48">• 이번 시험에서 가장 잘한 점 3가지 칭찬하기<br>• 겨울방학 준비</div>
         </div>
-        <div class="cell-footer"><span>7주차</span><span class="prog-zero" id="cal-foot-48">✓ 0/3</span></div>
+        <div class="cell-footer"><span>7주차</span><span class="prog-zero" id="cal-foot-48">✓ 0/2</span></div>
     </div>
-
         </div>
     </div>
 
@@ -1146,90 +1145,90 @@
 
         var weeklyData = [
             {
-                weekNum: 1,
-                range: "11/2(월) ~ 11/8(일)",
-                title: "1주차: 학원 신호등(○△×) & 제미나이 △최적풀이 적응",
-                type: "normal",
-                tasks: [
-                    "[수학(월수금)] 학원 숙제 채점 전 ○/△/× 표시 + 세모(△) 문제 사진 찍어 제미나이에게 '1단계 힌트 → 2단계 최적 풀이' 질문하기",
-                    "[국/사/과(화목)] 평일 1+1 원칙(화:국어, 목:과학/사회)으로 학교 필기와 프린트를 '자습서'에 합치는 단권화 시작",
-                    "[수학(토요일)] 이번 주 학원 교재 △/× 문제 중 욕심내지 말고 '핵심 5문제만' 골라 제미나이 행동강령 적고 백지 재풀이",
-                    "[일요일 Buffer] 오전 도덕/한자 40분 점검 후, 일요일 오후는 정규 계획 0개! (밀린 숙제 보충 및 완전 휴식)"
-                ]
+                        "weekNum": 1,
+                        "range": "11/2(월) ~ 11/8(일)",
+                        "title": "1주차: 수학 5:5 징검다리 숙제 & 영어 추가숙제 리듬 세팅",
+                        "type": "normal",
+                        "tasks": [
+                                    "[수학 5:5 분할] 월·수·금 밤엔 '학원 ×오답 복습 + 숙제 절반(50%)'만 풀고, 화·목·토에 나머지 절반 완수하기",
+                                    "[영어 추가숙제] 스스로 요청한 월·수·금 영어 숙제는 타이머 25분 켜고 타임어택으로 상쾌하게 끝내기",
+                                    "[국/사/과(화목)] 화(국어)·목(과학/사회) 40분 집중: 자습서에 학교 필기·프린트 합치는 단권화 시작",
+                                    "[주말 스카/버퍼] 토요일엔 금요일 수학 숙제 마무리 + △문제 5개 제미나이 복습 / 일요일 오후는 100% 자유 버퍼"
+                        ]
             },
             {
-                weekNum: 2,
-                range: "11/9(월) ~ 11/15(일)",
-                title: "2주차: 자습서 합본 & 하이탑 3문제 상한선 + 노트북LM 첫걸음",
-                type: "normal",
-                tasks: [
-                    "[수학] 월·수·금 학원 숙제 완수 및 세모(△) 문제 제미나이로 '내 풀이보다 2배 빠른 최적 풀이' 찾아 여백에 적기",
-                    "[과학 ★상한선] 자습서 정독 후, 하이탑은 전체 다 풀지 말고 '탐구·그래프 고난도 딱 3문제만' 발췌 풀이",
-                    "[암기 ★노트북LM] 화·목 자습서 35분 읽은 뒤 책 덮고, 노트북LM에 '스캐폴딩 퀴즈' 붙여넣어 1문제씩 힌트 핑퐁 풀기",
-                    "[도덕/한자] 일요일 오전 40분: 도덕 프린트 핵심어 밑줄 + 한자 사자성어(겉뜻/속뜻) 가림막 암기"
-                ]
+                        "weekNum": 2,
+                        "range": "11/9(월) ~ 11/15(일)",
+                        "title": "2주차: 제미나이 △코칭(화·목·토) & 하이탑 3문제 상한선",
+                        "type": "normal",
+                        "tasks": [
+                                    "[수학+제미나이] 화·목·토 수학 숙제 마무리할 때 세모(△) 문제 1~2개 사진 찍어 '1단계 힌트 → 2단계 최적 풀이' 적기",
+                                    "[영어 플러스] 월·수·금 영어 추가 숙제 완수 (피곤한 날엔 최소 방어선으로 절반만 해도 100% 성공 인정!)",
+                                    "[과학 ★상한선] 자습서 정독 후, 하이탑은 전체 다 풀지 말고 '탐구·그래프 고난도 딱 3문제만' 발췌 풀이",
+                                    "[암기 ★노트북LM] 화·목 자습서 읽은 뒤 책 덮고, 노트북LM '스캐폴딩 퀴즈'로 1문제씩 힌트 핑퐁 풀기"
+                        ]
             },
             {
-                weekNum: 3,
-                range: "11/16(월) ~ 11/22(일)",
-                title: "3주차: ★수행평가 방어 & 평가문제집 1차 진입",
-                type: "w-buffer",
-                tasks: [
-                    "[공통] 학교 수행평가 과제 최우선 완벽 제출 & 7과목 기말고사 확정 시험범위표 기록",
-                    "[수학] 학원 교재 숙제 완수 + 학교 수학 교과서 시험범위 예제·유제 1회독",
-                    "[국/사/과] 자습서 1차 단권화 완성 + '평가문제집' 중단원 문제 풀이 시작 (책에 답 적지 않고 연습장 활용)",
-                    "[노트북LM] 피곤한 날엔 노트북LM '객관식 함정 OX 퀴즈 3개' 버튼으로 가볍게 선지 판별 훈련"
-                ]
+                        "weekNum": 3,
+                        "range": "11/16(월) ~ 11/22(일)",
+                        "title": "3주차: ★수행평가 방어 & 평가문제집 1차 진입",
+                        "type": "w-buffer",
+                        "tasks": [
+                                    "[공통] 학교 수행평가 과제 최우선 완벽 제출 & 7과목 기말고사 확정 시험범위표 기록",
+                                    "[수학/영어 조율] 수행평가가 많은 날엔 영어 추가숙제 양을 조절하고 수학 숙제 5:5 분할 루틴 사수하기",
+                                    "[국/사/과] 자습서 1차 단권화 완성 + '평가문제집' 중단원 문제 풀이 시작 (책에 답 적지 않고 연습장 활용)",
+                                    "[노트북LM] 피곤한 날엔 노트북LM '객관식 함정 OX 퀴즈 3개' 버튼으로 가볍게 선지 판별 훈련"
+                        ]
             },
             {
-                weekNum: 4,
-                range: "11/23(월) ~ 11/29(일)",
-                title: "4주차: 수학 교과서 0.5초 출력 & 제미나이 식 교정",
-                type: "normal",
-                tasks: [
-                    "[수학] ★학교 교과서 중단원·대단원 문제 '0.5초 출력(보자마자 식 쓰기)' 초시계 1회독",
-                    "[수학 제미나이] 오래 걸리는 △문제는 내가 푼 연습장 식까지 사진 찍어 제미나이에게 '더 빠른 지름길 풀이' 코칭받기",
-                    "[국/사/과] ★평가문제집 1회독 완주 (틀린 선지는 틀린 단어 X 치고 고쳐 쓰기 + 자습서에 형광펜 역추적)",
-                    "[과학 하이탑] 평가문제집 끝난 단원에서 하이탑 계산/그래프 킬러 문항 딱 3~5문제만 추가 발췌"
-                ]
+                        "weekNum": 4,
+                        "range": "11/23(월) ~ 11/29(일)",
+                        "title": "4주차: 수학 교과서 0.5초 출력 & 평가문제집 1회독 완주",
+                        "type": "normal",
+                        "tasks": [
+                                    "[수학] ★학교 교과서 중단원·대단원 문제 '0.5초 출력(보자마자 식 쓰기)' 초시계 1회독 (일요일 오전 활용)",
+                                    "[수학 제미나이] 오래 걸리는 △문제는 내가 푼 연습장 식까지 사진 찍어 제미나이에게 '더 빠른 지름길 풀이' 코칭받기",
+                                    "[국/사/과] ★평가문제집 1회독 완주 (틀린 선지는 틀린 단어 X 치고 고쳐 쓰기 + 자습서에 형광펜 역추적)",
+                                    "[과학 하이탑] 평가문제집 끝난 단원에서 하이탑 계산/그래프 킬러 문항 딱 3~5문제만 추가 발췌"
+                        ]
             },
             {
-                weekNum: 5,
-                range: "11/30(월) ~ 12/6(일)",
-                title: "5주차: 노트북LM 백지 인출 완성 & 오답 2회독",
-                type: "normal",
-                tasks: [
-                    "[수학] ★학교 교과서·프린트 0.5초 출력 2회독 + 1~4주차 학원 교재 제미나이 '한 줄 행동강령' 총복습",
-                    "[암기 ★노트북LM] 자습서 덮고 노트북LM이 1문제씩 내주는 스캐폴딩 퀴즈 풀며 백지 인출 완벽 마스터",
-                    "[국/사/과] 무필기 지문 복습(국어) 및 평가문제집/하이탑에서 틀렸던(×) 문항만 2회독",
-                    "[도덕/한자] 도덕 평가문제집 1회독 완료 + 한자 시험범위 전체 단어 1차 가림막 백지 테스트"
-                ]
+                        "weekNum": 5,
+                        "range": "11/30(월) ~ 12/6(일)",
+                        "title": "5주차: 노트북LM 백지 인출 완성 & 오답 2회독",
+                        "type": "normal",
+                        "tasks": [
+                                    "[수학] ★학교 교과서·프린트 0.5초 출력 2회독 + 1~4주차 학원 교재 제미나이 '한 줄 행동강령' 총복습",
+                                    "[암기 ★노트북LM] 자습서 덮고 노트북LM이 1문제씩 내주는 스캐폴딩 퀴즈 풀며 백지 인출 완벽 마스터",
+                                    "[국/사/과] 무필기 지문 복습(국어) 및 평가문제집/하이탑에서 틀렸던(×) 문항만 2회독",
+                                    "[도덕/한자] 도덕 평가문제집 1회독 완료 + 한자 시험범위 전체 단어 1차 가림막 백지 테스트"
+                        ]
             },
             {
-                weekNum: 6,
-                range: "12/7(월) ~ 12/13(일)",
-                title: "6주차: 초시계 3회독 & 7과목 A4 1장 최종 요약",
-                type: "w-final",
-                tasks: [
-                    "[수학] ★학교 교과서·프린트 초시계 3회독 완성 + 제미나이 '한 줄 행동강령' 노트 최종 암기",
-                    "[국/사/과] 단권화된 자습서 40분 내 초고속 스캔 + 평가문제집 끝까지 틀린 문제만 재확인",
-                    "[영/도/한] 영어 학원 서술형 유력 문장 + 도덕 사상가/프린트 + 한자 성어 최종 인출 점검",
-                    "[7과목 공통] 시험장 가져갈 '과목별 마지막 헷갈리는 5% 약점 압축 A4 1장 요약본' 완성"
-                ]
+                        "weekNum": 6,
+                        "range": "12/7(월) ~ 12/13(일)",
+                        "title": "6주차: 초시계 3회독 완성 & 12/13(일) 첫날 시험과목 올인",
+                        "type": "w-final",
+                        "tasks": [
+                                    "[수학] ★학교 교과서·프린트 초시계 3회독 완성 + 제미나이 '한 줄 행동강령' 노트 최종 암기",
+                                    "[국/사/과] 단권화된 자습서 40분 내 초고속 스캔 + 평가문제집 끝까지 틀린 문제만 재확인",
+                                    "[영/도/한] 영어 학원 서술형 유력 문장 + 도덕 사상가/프린트 + 한자 성어 최종 인출 점검",
+                                    "[7과목 공통] 시험장 가져갈 '과목별 마지막 헷갈리는 5% 약점 압축 A4 1장 요약본' 완성"
+                        ]
             },
             {
-                weekNum: 7,
-                range: "12/14(월) ~ 12/20(일)",
-                title: "7주차: 실전 정기고사 주간 & 파이널 초고속 스캔",
-                type: "w-final",
-                tasks: [
-                    "[시험 전날] 새로운 문제 풀이 절대 금지! 단권화 자습서와 제미나이 수학 행동강령만 1시간 내 스캔",
-                    "[시험 당일 아침] 등교 후 직접 만든 '과목별 A4 1장 약점 요약본'만 반복 눈도장",
-                    "[실전 시험] 수학 막히는 문제 건너뛰기, 서술형 등호(=) 줄 맞춤 및 단위/부호 완벽 검산",
-                    "[시험 종료 후] 가벼운 오답 복기 후 한 학기 완주 셀프 칭찬 & 충분한 휴식"
-                ]
+                        "weekNum": 7,
+                        "range": "12/14(월) ~ 12/20(일)",
+                        "title": "7주차: ★실전 시험(12/14~16) 익일 과목 맞춤 올인 & 완주",
+                        "type": "w-final",
+                        "tasks": [
+                                    "[시험 전날] 새로운 문제 풀이 절대 금지! 단권화 자습서와 제미나이 수학 행동강령만 1시간 내 스캔",
+                                    "[시험 당일 아침] 등교 후 직접 만든 '과목별 A4 1장 약점 요약본'만 반복 눈도장",
+                                    "[실전 시험] 수학 막히는 문제 건너뛰기, 서술형 등호(=) 줄 맞춤 및 단위/부호 완벽 검산",
+                                    "[시험 종료 후] 가벼운 오답 복기 후 한 학기 완주 셀프 칭찬 & 충분한 휴식"
+                        ]
             }
-        ];
+];
 
         var startDate = new Date(2026, 10, 2);
         var calendarDays = [];
@@ -1255,55 +1254,85 @@
         }
 
         function getDefaultDayTemplate(dayObj) {
+            var idx = dayObj.index;
             var dow = dayObj.dow;
             var w = dayObj.weekNum;
             var subjects = { math: "", eng: "", kor: "", soc: "", sci: "", moral: "", hanja: "" };
             var checkLabels = [];
 
-            if (w === 7) {
-                subjects.math = "제미나이 한 줄 행동강령 & 교과서 스캔";
-                subjects.kor = "내일 시험 과목 단권화 자습서 & A4 1장 요약본 암기";
+            // ★ Special Exam Eve Days: 12/13(Sun, idx 41), 12/14(Mon, idx 42), 12/15(Tue, idx 43)
+            if (idx === 41 || idx === 42 || idx === 43) {
+                var examDayNum = idx - 40; // 1일차(12/14), 2일차(12/15), 3일차(12/16)
+                var nextDateLabel = idx === 41 ? "12/14(월) 1일차" : (idx === 42 ? "12/15(화) 2일차" : "12/16(수) 3일차");
+                subjects.kor = "★[" + nextDateLabel + " 시험과목 직접 입력] 단권화 자습서·프린트 40분 초고속 스캔";
+                subjects.math = "[내일 수학 시험일 경우] 학교 교과서·프린트 형광펜 문항 + 제미나이 '한 줄 행동강령' 암기";
+                subjects.eng = "[내일 영어 시험일 경우] 학원 암기 본문 서술형 유력 문장 + 문법 오답 프린트 최종 점검";
+                subjects.sci = "[내일 사/과 시험일 경우] 평가문제집·하이탑 틀렸던(×) 문제만 재확인 + 노트북LM 최종 점검";
+                subjects.moral = "[내일 도/한 시험일 경우] 도덕 프린트 사상가/용어 + 한자 음·뜻·사자성어 속뜻 최종 테스트";
+                subjects.soc = "★시험장에 들고 갈 [" + nextDateLabel + " 과목별 A4 1장 약점 요약본] 최종 완성!";
                 checkLabels = [
-                    "[파이널 1] 내일 시험 과목 '단권화 자습서' 40분 내 초고속 스캔 완료",
-                    "[파이널 2] 평가문제집·학원교재·하이탑에서 끝까지 틀렸던(×) 문항만 눈으로 재점검",
-                    "⚡ [최소 방어선] 시험 전날 너무 피곤하면 'A4 1장 요약본'만 읽고 밤 11시 전 무조건 취침!"
+                    "[1단계: 단권화 스캔 (과목당 40분)] 내일(" + nextDateLabel + ") 시험 보는 과목의 '단권화 자습서'와 '학교 프린트'만 처음부터 끝까지 초고속 스캔 완료",
+                    "[2단계: 오답만 타격 (과목당 30분)] 새로운 문제 풀기 절대 금지! 그동안 평가문제집·학원교재·하이탑에서 틀렸던(×)·세모(△) 문제만 눈과 손으로 재확인",
+                    "[3단계: 아침용 A4 1장 요약본] 내일 아침 교실에서 시험 직전 10분 동안 볼 '끝까지 헷갈리는 약점 A4 1장 요약본' 완성",
+                    "⚡ [최소 방어선 (컨디션 관리)] 내가 만든 A4 1장 요약본과 형광펜만 훑어보고 밤 11시 전에는 무조건 취침하기!"
+                ];
+            } else if (idx === 44) {
+                // 12/16 (Wed): Final Day 3 Exam & Liberation!
+                subjects.kor = "[오전] 12/16(수) 3일차 마지막 시험 끝까지 집중해서 완주!";
+                subjects.math = "[오후] 🎉 7주간의 기말고사 대장정 종료! 학원/숙제 걱정 내려놓고 푹 쉬기";
+                checkLabels = [
+                    "[아침 등교] 오늘(3일차) 시험 과목 'A4 1장 약점 요약본'만 보며 침착하게 시험 치르기",
+                    "[실전 시험] 마지막 교시까지 서술형 조건·단위·마킹 실수 없이 끝까지 검산 완주!",
+                    "🎉 [시험 해방!] 7주 동안 스스로 계획 세우고 달려온 나 자신에게 듬뿍 칭찬하고 맛있는 것 먹으며 푹 쉬기!"
+                ];
+            } else if (idx >= 45) {
+                // 12/17 (Thu) ~ 12/20 (Sun): Post-exam recovery & review
+                subjects.kor = "학교 시험지 배부 시 채점 및 이의신청 확인 (가벼운 복기)";
+                subjects.math = "충분한 휴식 및 일상 학원 루틴 가볍게 복귀";
+                checkLabels = [
+                    "[학교 수업] 시험지 채점 점수 확인 및 이번 시험에서 내가 가장 성장한 점 1가지 찾기",
+                    "⚡ [충전과 휴식] 시험 기간 동안 쌓인 피로 풀고 충분히 휴식하기"
                 ];
             } else if (dow === 1 || dow === 3 || dow === 5) {
-                subjects.math = "수학 학원 ×오답 복습(25분) + 숙제 ○/△/×(50분) + △문제 제미나이 최적풀이(15분)";
+                var nextDue = dow === 1 ? "수요일" : (dow === 3 ? "금요일" : "월요일");
+                subjects.math = "오늘 수업 ×오답 백지 복습(20분) + " + nextDue + " 제출 숙제 '앞부분 절반(50%)'만 풀기(30분)";
+                subjects.eng = "★내가 신청한 월·수·금 영어 추가 숙제 (25분 타임어택 완료!)";
                 checkLabels = [
-                    "[수학 1순위 (25분)] 오늘 학원 수업에서 틀렸던(×) 문제 집에 오자마자 해설 가리고 백지 재풀이",
-                    "[수학 숙제 (50분)] 학원 전용 교재 숙제 풀이 (채점 전 ○/△/× 신호등 표시 & 등호 = 줄 맞춤)",
-                    "[🤖 제미나이 (15분)] 숙제 중 세모(△) 문제 사진 찍어 [1단계 힌트 → 내 대답 → 2단계 최적 풀이] 코칭받기",
-                    "⚡ [최소 방어선 (피곤한 날)] 오늘 학원에서 틀린 문제 딱 3개만 다시 풀고 숙제 절반만 해도 오늘 출석 100% 인정!"
+                    "[수학 골든타임 (20분)] 오늘 학원 수업에서 틀렸던(×) 문제 집에 오자마자 해설 가리고 다시 풀기",
+                    "[수학 1차 분할 (30분)] " + nextDue + "까지 내야 할 수학 숙제 중 '앞부분 절반(50%)'만 미리 풀기 (채점 전 ○/△/× 표시)",
+                    "[💬 영어 추가숙제 (25분)] 스스로 신청한 멋진 영어 숙제! 타이머 25분 켜고 타임어택으로 집중해서 끝내기",
+                    "⚡ [최소 방어선 (피곤한 날)] 오늘 학원 ×오답 3문제 + 영어 추가숙제 절반만 하고 바로 취침해도 출석 100% 인정!"
                 ];
             } else if (dow === 2) {
-                subjects.eng = "영어 학원 본문/문법 막힌 문장 점검 (20분)";
-                subjects.kor = "국어 [단원명 입력] 자습서 단권화(35분) + 노트북LM 스캐폴딩 퀴즈 3개(15분)";
+                subjects.math = "★내일(수요일) 제출할 수학 숙제 '나머지 절반' 완수 + 세모(△) 제미나이 1→2단계 코칭 (40분)";
+                subjects.eng = "(화요일은 영어학원 수업 시간에 집중! 집 숙제는 수학·국어에 양보)";
+                subjects.kor = "국어 [단원명 입력] 자습서 단권화(25분) + 노트북LM 스캐폴딩 퀴즈 3개(15분)";
                 checkLabels = [
-                    "[영어 (20분)] 영어 학원 테스트 준비 및 오늘 틀린 문법 문장 오답 체크",
-                    "[국어 집중 (35분)] 과목 전환 없이 오직 '국어 1단원'만 자습서 단권화 및 학습활동 모범답안 암기",
-                    "[🤖 노트북LM (15분)] 자습서 덮고 초록 버튼 복사 → [1단계 문제 → 2단계 첫 힌트 → 3단계 정답] 핑퐁 풀기",
-                    "⚡ [최소 방어선 (피곤한 날)] 영어 숙제 끝내고 국어 자습서 2쪽만 읽거나 노트북LM 오디오만 들어도 100% 인정!"
+                    "[📐 수요일 수학숙제 완수 (30분)] 월요일에 절반 해둔 수학 숙제의 '나머지 절반' 끝까지 풀고 채점 전 ○/△/× 표시",
+                    "[🤖 제미나이 △코칭 (10분)] 수학 숙제 중 세모(△) 문제 1~2개 사진 찍어 [1단계 힌트 → 2단계 최적 풀이] 한 줄 행동강령 적기",
+                    "[📚 국어 + 노트북LM (40분)] 국어 1단원 자습서 단권화(25분) 후 책 덮고 노트북LM 스캐폴딩 퀴즈 3개 풀기(15분)",
+                    "⚡ [최소 방어선 (피곤한 날)] 내일 제출할 '수요일 수학 숙제 마무리'만 끝내고 국어는 자습서 2쪽만 읽어도 100% 인정!"
                 ];
             } else if (dow === 4) {
-                subjects.eng = "영어 학원 어휘/본문 복습 (20분)";
-                subjects.sci = "과학(또는 사회) [단원명 입력] 자습서 단권화(35분) + 노트북LM 스캐폴딩 퀴즈(15분)";
+                subjects.math = "★내일(금요일) 제출할 수학 숙제 '나머지 절반' 완수 + 세모(△) 제미나이 1→2단계 코칭 (40분)";
+                subjects.eng = "(목요일은 영어학원 수업 시간에 집중! 집 숙제는 수학·사/과에 양보)";
+                subjects.sci = "과학(또는 사회) [단원명 입력] 자습서 단권화(25분) + 노트북LM 스캐폴딩 퀴즈(15분)";
                 subjects.soc = "사회/역사 [과학과 번갈아 단원명 입력] 자습서 단권화";
                 checkLabels = [
-                    "[영어 (20분)] 영어 학원 암기 본문 중 안 외워진 문장 3개 백지 영작 점검",
-                    "[사/과 집중 (35분)] 오늘 정한 과학(또는 사회) 딱 1과목만 자습서 단권화 및 실험/지도 정리",
-                    "[🤖 노트북LM (15분)] 자습서 덮고 노트북LM 스캐폴딩 퀴즈 붙여넣어 [1단계 문제 → 2단계 힌트] 인출 연습",
-                    "⚡ [최소 방어선 (피곤한 날)] 과학/사회 자습서 밑줄만 긋고 노트북LM 'OX 함정 퀴즈 3개'만 풀어도 100% 인정!"
+                    "[📐 금요일 수학숙제 완수 (30분)] 수요일에 절반 해둔 수학 숙제의 '나머지 절반' 끝까지 풀고 채점 전 ○/△/× 표시",
+                    "[🤖 제미나이 △코칭 (10분)] 수학 숙제 중 세모(△) 문제 1~2개 사진 찍어 [1단계 힌트 → 2단계 최적 풀이] 한 줄 행동강령 적기",
+                    "[🔬 사/과 + 노트북LM (40분)] 과학(또는 사회) 1단원 자습서 정리(25분) 후 노트북LM 스캐폴딩 퀴즈 3개 풀기(15분)",
+                    "⚡ [최소 방어선 (피곤한 날)] 내일 제출할 '금요일 수학 숙제 마무리'만 끝내고 노트북LM OX 퀴즈 3개만 풀어도 100% 인정!"
                 ];
             } else if (dow === 6) {
-                subjects.math = "이번 주 수학 학원 △/× 중 '가장 중요한 5문제만' 제미나이 최적 풀이로 백지 복습 (60분)";
-                subjects.sci = "과학 [단원명 입력] 평가문제집 풀이 + ★하이탑 킬러 '딱 3문제만' 발췌 (50분)";
-                subjects.soc = "사회/국어 [단원명 입력] 평가문제집 풀이 및 틀린 선지 단어 고치기 (50분)";
+                subjects.math = "① 월요일 제출할 수학 숙제 '나머지 절반' 완수(40분) + ② 주간 △/× 중 '핵심 5문제만' 백지 복습(40분)";
+                subjects.sci = "과학 [단원명 입력] 평가문제집 풀이 + ★하이탑 킬러 '딱 3문제만' 발췌 (45분)";
+                subjects.soc = "사회/국어 [단원명 입력] 평가문제집 풀이 및 틀린 선지 단어 고치기 (45분)";
                 checkLabels = [
-                    "[수학 상한선 (60분)] 이번 주 학원 교재 △·× 중 '핵심 5문제만' 골라 제미나이가 알려준 최적 풀이대로 백지에 다시 풀기",
-                    "[과학 상한선 (50분)] 과학 평가문제집 풀이 후, 하이탑은 다 풀지 말고 '그래프·탐구 킬러 딱 3문제만' 골라 풀기",
-                    "[국/사 평가문제집 (50분)] 국어·사회 평가문제집 풀고 틀린 선지의 그릇된 단어 X 치고 바르게 고치기",
-                    "⚡ [최소 방어선 (지치는 토요일)] 수학 △오답 3문제 + 평가문제집 1단원만 끝내도 토요일 미션 성공!"
+                    "[📐 월요일 수학숙제 조기 완수 (40분)] 금요일에 절반 해둔 월요일 수학 숙제를 토요일 스카 첫 시간에 100% 끝내기!",
+                    "[🤖 수학 상한선 (40분)] 이번 주 학원 교재 △·× 중 '핵심 5문제만' 골라 제미나이 최적 풀이대로 백지에 다시 풀기",
+                    "[🔬 과학 상한선 (45분)] 과학 평가문제집 풀이 후, 하이탑은 다 풀지 말고 '그래프·탐구 킬러 딱 3문제만' 골라 풀기",
+                    "[📚 국/사 평가문제집 (45분)] 국어·사회 평가문제집 풀고 틀린 선지 고치기 (⚡방어선: 월요일 수학 숙제만 다 끝내도 성공!)"
                 ];
             } else {
                 subjects.math = "[오전 35분] 학교 수학 교과서 중단원 문제 초시계 켜고 0.5초 출력 연습";
@@ -1313,15 +1342,14 @@
                 checkLabels = [
                     "[오전 수학 (35분)] 학교 수학 교과서 중단원·대단원 문제 보자마자 0.5초 만에 식 쓰기 초시계 연습",
                     "[오전 도/한 (40분)] 도덕 프린트/노트북LM 퀴즈(20분) + 한문 교과서 한자어/성어 속뜻 가림막 테스트(20분)",
-                    "[🟢 오후 100% 버퍼] 평일에 밀린 숙제가 있다면 오후에 보충하고, 다 끝냈다면 죄책감 없이 신나게 휴식하기!",
+                    "[🟢 오후 100% 버퍼] 월요일 수학 숙제도 토요일에 끝났으니, 밀린 게 없다면 일요일 오후는 죄책감 없이 신나게 휴식!",
                     "⚡ [주간 셀프 플래닝] 다음 주 달력을 눌러 화·목·토요일에 공부할 국·사·과 단원명 미리 적어두기 (5분)"
                 ];
             }
 
             return { subjects: subjects, checkLabels: checkLabels };
         }
-
-        var activeDayIdx = null;
+var activeDayIdx = null;
 
         function initApp() {
             renderWeeklyBars();
@@ -1331,7 +1359,7 @@
 
         function getDaySavedData(dayObj) {
             var raw = null;
-            try { raw = localStorage.getItem("v7_cal_day_" + dayObj.dateStr); } catch(e) {}
+            try { raw = localStorage.getItem("v9_cal_day_" + dayObj.dateStr); } catch(e) {}
             var tpl = getDefaultDayTemplate(dayObj);
             if (raw) {
                 try {
@@ -1355,7 +1383,7 @@
                 var doneCount = 0;
                 w.tasks.forEach(function(_, idx) {
                     var val = null;
-                    try { val = localStorage.getItem("v7_week_" + w.weekNum + "_t_" + idx); } catch(e) {}
+                    try { val = localStorage.getItem("v9_week_" + w.weekNum + "_t_" + idx); } catch(e) {}
                     if (val === 'true') doneCount++;
                 });
                 var progEl = document.getElementById("wk-prog-" + w.weekNum);
@@ -1475,7 +1503,7 @@
             });
 
             try {
-                localStorage.setItem("v7_cal_day_" + dayObj.dateStr, JSON.stringify({ subjects: subjects, checks: checks }));
+                localStorage.setItem("v9_cal_day_" + dayObj.dateStr, JSON.stringify({ subjects: subjects, checks: checks }));
             } catch(e) {}
             closeModal('day-modal');
             renderCalendar();
@@ -1490,7 +1518,7 @@
 
             var html = '';
             wObj.tasks.forEach(function(taskText, idx) {
-                var key = "v7_week_" + weekNum + "_t_" + idx;
+                var key = "v9_week_" + weekNum + "_t_" + idx;
                 var val = null;
                 try { val = localStorage.getItem(key); } catch(e) {}
                 var isChecked = val === 'true' ? 'checked' : '';
@@ -1504,7 +1532,7 @@
         }
 
         function toggleWeekTask(weekNum, idx, el) {
-            var key = "v7_week_" + weekNum + "_t_" + idx;
+            var key = "v9_week_" + weekNum + "_t_" + idx;
             try { localStorage.setItem(key, el.checked); } catch(e) {}
             var row = document.getElementById("wk_row_" + idx);
             if (el.checked) row.classList.add('completed');
@@ -1523,7 +1551,7 @@
                 w.tasks.forEach(function(_, idx) {
                     wkTotal++;
                     var val = null;
-                    try { val = localStorage.getItem("v7_week_" + w.weekNum + "_t_" + idx); } catch(e) {}
+                    try { val = localStorage.getItem("v9_week_" + w.weekNum + "_t_" + idx); } catch(e) {}
                     if (val === 'true') wkDone++;
                 });
             });
@@ -1542,7 +1570,7 @@
             if (!confirm("모든 날짜의 수정 내용과 체크 기록을 초기화하시겠습니까?")) return;
             try {
                 Object.keys(localStorage).forEach(function(k) {
-                    if (k.indexOf('v7_') === 0) localStorage.removeItem(k);
+                    if (k.indexOf('v9_') === 0) localStorage.removeItem(k);
                 });
             } catch(e) {}
             location.reload();
